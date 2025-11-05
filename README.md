@@ -29,11 +29,11 @@ export default defineNuxtConfig({
     baseUrl: 'https://jsonplaceholder.typicode.com',
 
     probes: {
-        get: {
-            '/todos/{id}': {
-                params: { id: 3 },
-            } 
-        },
+      get: {
+        '/todos/{id}': {
+          params: { id: 3 },
+        }
+      },
     },
   },
 })
