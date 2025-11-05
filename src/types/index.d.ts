@@ -7,7 +7,7 @@ export interface Config extends Omit<DiscoverConfig, 'outputDir' | 'generate'> {
     typescript?: OpenAPITSOptions
   }
 
-  public?: boolean
+  private?: boolean
 }
 
 export interface RuntimeConfig extends Pick<DiscoverConfig, 'baseUrl' | 'headers' | 'logger'> {}

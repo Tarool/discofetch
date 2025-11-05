@@ -54,7 +54,7 @@ export default defineNuxtModule<ModuleOptions>({
       },
     ])
 
-    if (options.public) {
+    if (!options.private) {
       addImports([
         {
           from: importFile,
