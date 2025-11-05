@@ -1,2 +1,5 @@
+# 0.0.4
+- Bumped dependencies
+
 # 0.0.1 - 0.0.3
 - Initial releases with basic functionality
