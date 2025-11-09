@@ -5,12 +5,12 @@
 [![NPM last update][npm-last-update-src]][npm-last-update-href]
 [![License][license-src]][license-href]
 
-🪩 Use legacy APIs with confidence.
+Use legacy APIs with confidence.
 
 Discofetch is a type-safe fetch client that automatically discovers and generates TypeScript
 types for REST APIs that lack OpenAPI specifications.
 Instead of manually writing types or dealing with `any`, Discofetch probes your API endpoints
-at build time and creates a fully-typed fetch client for runtime use.
+at build time and creates a fully-typed fetch client for runtime use with zero overhead.
 
 ## Features
 
