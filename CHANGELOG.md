@@ -1,3 +1,6 @@
+# 0.1.0
+- Upgraded to autodisco 0.3
+
 # 0.0.5
 - Updated configuration
 
