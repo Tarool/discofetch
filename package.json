@@ -9,6 +9,10 @@
     "type": "git",
     "url": "https://github.com/freb97/discofetch"
   },
+  "workspaces": [
+    "examples/*",
+    "."
+  ],
   "keywords": [
     "api",
     "client",
@@ -17,52 +21,45 @@
     "fetch",
     "typescript",
     "openapi",
-    "vite",
-    "nextjs",
     "nuxt",
-    "rspack",
+    "vite",
     "types"
   ],
   "exports": {
-    ".": {
-      "types": "./dist/index.d.mts",
-      "import": "./dist/index.mjs"
-    },
     "./nuxt": {
-      "types": "./dist/adapters/nuxt.d.mts",
-      "import": "./dist/adapters/nuxt.mjs"
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
     },
-    "./vite": {
-      "types": "./dist/adapters/vite.d.mts",
-      "import": "./dist/adapters/vite.mjs"
+    "./client": {
+      "types": "./dist/client/index.d.ts"
     }
   },
-  "main": "./dist/index.mjs",
-  "types": "./dist/index.d.mts",
+  "main": "./dist/module.mjs",
+  "typesVersions": {
+    "*": {
+      "./nuxt": [
+        "./dist/types.d.mts"
+      ]
+    }
+  },
   "files": [
-    "LICENSE",
-    "README.md",
     "dist"
   ],
-  "workspaces": [
-    "packages/*",
-    "examples/*"
-  ],
   "scripts": {
-    "build": "obuild",
+    "build": "nuxt-module-build build",
+    "prepare": "nuxt-module-build prepare",
     "test": "vitest",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
     "dev:nuxt": "bun --filter=nuxt-example run dev",
-    "build:nuxt": "bun --filter=nuxt-example run build"
+    "build:nuxt": "bun --filter=nuxt-example run build",
+    "typecheck": "vue-tsc --noEmit"
   },
   "peerDependencies": {
-    "@nuxt/kit": "^4.2.0",
-    "nuxt": "^4.2.0",
-    "vite": "^7.1.12"
+    "@nuxt/kit": "^4",
+    "nuxt": "^4"
   },
   "dependencies": {
-    "autodisco": "^0.4.0",
+    "autodisco": "^0.4.3",
     "openapi-fetch": "^0.15.0",
     "openapi-typescript": "^7.10.1",
     "scule": "^1.3.0",
@@ -70,9 +67,17 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",
+    "@nuxt/kit": "^4.2.1",
+    "@nuxt/module-builder": "^1.0.2",
+    "@nuxt/schema": "^4.2.1",
     "@types/node": "^20.19.24",
     "eslint": "^9.39.1",
-    "obuild": "^0.2.1",
-    "typescript": "^5.9.3"
+    "nuxt": "^4.2.1",
+    "typescript": "^5.9.3",
+    "unbuild": "^3.6.1",
+    "vue-tsc": "^3.1.5"
+  },
+  "overrides": {
+    "discofetch": "file:."
   }
 }

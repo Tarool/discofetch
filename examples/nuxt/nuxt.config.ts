@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    '../../src/adapters/nuxt',
+    'discofetch/nuxt',
   ],
 
   discofetch: {

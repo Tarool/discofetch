@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const dfetch = useDfetch()
+
 const { data, error } = await dfetch.GET('/posts/{id}', {
   params: {
     path: {
