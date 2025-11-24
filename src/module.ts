@@ -81,6 +81,7 @@ export default defineNuxtModule<ModuleOptions>({
     ]
 
     addServerImports(imports)
+    addImports(imports)
 
     updateRuntimeConfig({
       discofetch: getRuntimeConfig(options),
@@ -91,15 +92,13 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.nitro.typescript.tsConfig.include ??= []
     nuxt.options.nitro.typescript.tsConfig.include.push(outputDir)
 
-    if (!options.private) {
-      addImports(imports)
+    nuxt.options.typescript.tsConfig.include ??= []
+    nuxt.options.typescript.tsConfig.include.push(outputDir)
 
+    if (!options.private) {
       updateRuntimeConfig({
         public: { discofetch: getRuntimeConfig(options) },
       })
-
-      nuxt.options.typescript.tsConfig.include ??= []
-      nuxt.options.typescript.tsConfig.include.push(outputDir)
     }
   },
 })
