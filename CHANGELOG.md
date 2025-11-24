@@ -1,3 +1,6 @@
+# 0.2.1
+- Fixed component types export
+
 # 0.2.0
 - Refactored Nuxt module
 
