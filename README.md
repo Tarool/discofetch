@@ -90,6 +90,9 @@ export default defineNuxtConfig({
         },
       },
     },
+
+    // Whether the generated client should only be available server-side
+    private: false,
   },
 })
 ```
@@ -100,6 +103,8 @@ Once configured, use the `dfetch` composable anywhere in your Nuxt app:
 
 ```html
 <script setup lang="ts">
+const dfetch = useDfetch()
+
 // GET request with path parameters
 const { data: todo } = await dfetch.GET('/todos/{id}', {
   params: {
@@ -130,6 +135,9 @@ type Body = DfetchPaths['/todos']['post']['requestBody']
 console.log(todo.title) // Fully typed!
 </script>
 ```
+
+The `useDfetch` composable provides methods for all HTTP verbs you defined probes for, complete with type safety and autocompletion.
+It is also available on the server side during SSR and in Nitro API routes.
 
 ## Configuration
 
@@ -263,7 +271,7 @@ export default defineNuxtConfig({
 
     // Generate Zod schemas for runtime validation
     generate: {
-      zod: true, // Enable Zod schema generation
+      zod: false, // Enable Zod schema generation
       typescript: { // Options for openapi-typescript
         strictNullChecks: true,
         // Other options...
