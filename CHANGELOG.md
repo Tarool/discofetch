@@ -1,3 +1,6 @@
+# 0.2.2
+- Fixed private client types
+
 # 0.2.1
 - Fixed component types export
 
