@@ -28,7 +28,7 @@ which automatically generates OpenAPI schemas by sending probe requests to your 
 and analyzing the responses. The workflow is:
 
 1. **Discovery Phase** (Build time): You define which endpoints to probe with sample parameters
-2. **Type Generation** (Build time): autodisco infers the API structure and generates TypeScript types using [openapi-typescript](https://github.com/openapi-ts/openapi-typescript)
+2. **Type Generation** (Build time): [autodisco](https://github.com/freb97/autodisco) infers the API structure and generates TypeScript types using [openapi-typescript](https://github.com/openapi-ts/openapi-typescript)
 3. **Type-Safe Client** (Runtime): A fetch client powered by [openapi-fetch](https://github.com/openapi-ts/openapi-typescript/tree/main/packages/openapi-fetch) provides fully-typed methods for your API
 
 This gives you autocompletion, type checking, and IntelliSense for legacy APIs without manual type definitions.
@@ -91,7 +91,7 @@ export default defineNuxtConfig({
       },
     },
 
-    // Whether the generated client should only be available server-side
+    // Whether the generated client should only be available server-side (nitro)
     private: false,
   },
 })
@@ -132,7 +132,7 @@ const { data: newTodo } = await dfetch.POST('/todos', {
 type Todos = DfetchComponents['schemas']['Todos']
 type Body = DfetchPaths['/todos']['post']['requestBody']
 
-console.log(todo.title) // Fully typed!
+console.log(todo.title) // ✅ Fully typed!
 </script>
 ```
 
